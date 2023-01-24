@@ -1,7 +1,7 @@
 import './App.css';
-import Navbar from './components/navbar/Navbar.js';
-import HeroSection from './components/HeroSection.js';
-import FeatureGrid from './components/FeatureGrid.js';
+import Navbar from '../components/navbar/Navbar.js';
+import HeroSection from '../components/HeroSection.js';
+import FeatureGrid from '../components/FeatureGrid.js';
 import { createTheme } from '@mui/material/styles';
 import { ThemeProvider } from '@mui/material/styles';
 
@@ -31,7 +31,7 @@ const features = [
   },
   {
     id: '1',
-    title: 'Disbursement Fee Funding – business to business',
+    title: 'Disbursement Fee Funding – Business to Business',
     content: 'A business-to-business credit facility that law firms can use to fund working capital. Typically used by our law firm partners to fund out of pocket disbursement costs such as; medical reports, valuations, expert reports, barrister fees and court filing fees. Please get in touch with EAF to discuss how we can assist. Contact Alistair Swain at alistair.swain@eafunding.com.au',
     image: '/images/handinhand.jpg',
   },
