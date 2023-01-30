@@ -40,7 +40,7 @@ function FAQ() {
   return(
     <div>
       <Navbar />
-      <Container>
+      <Container sx={{padding: 5}}>
         <Typography variant="h2" textAlign='center'>{DATA.title}</Typography>
         <FaqAccordian data={DATA.rows} />
       </Container>

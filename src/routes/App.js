@@ -31,7 +31,7 @@ const features = [
   },
   {
     id: '1',
-    title: 'Disbursement Fee Funding – Business to Business',
+    title: 'Disbursement Fee Funding – Business to usiness',
     content: 'A business-to-business credit facility that law firms can use to fund working capital. Typically used by our law firm partners to fund out of pocket disbursement costs such as; medical reports, valuations, expert reports, barrister fees and court filing fees. Please get in touch with EAF to discuss how we can assist. Contact Alistair Swain at alistair.swain@eafunding.com.au',
     image: '/images/handinhand.jpg',
   },
