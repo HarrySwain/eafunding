@@ -27,19 +27,19 @@ const features = [
     id: '0',
     title: 'Equal Access Funding',
     content: 'Working hand-in-hand with our law firm partners, EAF ensures that personal injury claims are affordable. Law firms can apply for general, business to business facilities to provide working capital and fund disbursements.Consumers can utilise the EAF consumer credit facility from approved partner law firms. EAF is a licensed credit provider and a member of the Australian Financial Conduct Authority (AFCA).',
-    image: 'images/puzzle.jpg',
+    image: '../img/puzzle.jpg',
   },
   {
     id: '1',
     title: 'Disbursement Fee Funding – Business to usiness',
     content: 'A business-to-business credit facility that law firms can use to fund working capital. Typically used by our law firm partners to fund out of pocket disbursement costs such as; medical reports, valuations, expert reports, barrister fees and court filing fees. Please get in touch with EAF to discuss how we can assist. Contact Alistair Swain at alistair.swain@eafunding.com.au',
-    image: '/images/handinhand.jpg',
+    image: '../img/handinhand.jpg',
   },
   {
     id: '2',
     title: 'Disbursement Fee Funding – Consumer Credit',
     content: 'An EAF consumer credit facility will cover solicitor approved out of pocket disbursement costs such as; medical reports, valuations, expert reports, barrister fees and court filing fees. With your solicitors’ approval, the client will only have to repay the Equal Access Funding credit facility if your matter is successful.',
-    image: 'images/puzzle.jpg',
+    image: '../img/puzzle.jpg',
   },
 ]
 
