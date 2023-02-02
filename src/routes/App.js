@@ -19,8 +19,13 @@ const theme = createTheme({
 const heroContent = {
   image: '../img/herobackground.jpg',
   title: 'Welcome to Equal Access Funding',
-  content: 'Equal Access Funding Pty Ltd (EAF) is a specialist company that provides funding solutions for legal services businesses. Founded in 2012, EAF assists people and businesses pursuing personal injury claims within the Australian legal system. Offering both business-to-business finance solutions for law firms as well as consumer credit facility to clients of approved law firm partners. EAF provides funding for many purposes, including out-of-pocket expenses incurred in pursuing legal matters. Costs such as medical reports, valuations, court filing fees, Barristers fees etc. EAF holds Australian Credit Licence No. 419612 and is a member of the Australian Financial Complaints Authority',
-};
+  content: [
+    'Equal Access Funding Pty Ltd (EAF) is a specialist company that provides funding solutions for legal services businesses. ',
+    'Founded in 2012, EAF assists people and businesses pursuing personal injury claims within the Australian legal system. ',
+    'Offering both business-to-business finance solutions for law firms as well as consumer credit facility to clients of approved law firm partners. ',
+    'EAF provides funding for many purposes, including out-of-pocket expenses incurred in pursuing legal matters. Costs such as medical reports, valuations, court filing fees, Barristers fees etc. ',
+    'EAF holds Australian Credit Licence No. 419612 and is a member of the Australian Financial Complaints Authority.',
+  ]}
 
 const features = [
   {

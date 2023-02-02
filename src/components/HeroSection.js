@@ -24,11 +24,11 @@ function HeroSection({heroContent}) {
           bottom: 0,
           right: 0,
           left: 0,
-          backgroundColor: 'rgba(0,0,0,.3)',
+          backgroundColor: 'rgba(0,0,0,0.2)',
         }}
       />
       <Grid container>
-        <Grid item md={6}>
+        <Grid item md={6} sm={9} xs={11}>
           <Box
             sx={{
               position: 'relative',
@@ -36,12 +36,14 @@ function HeroSection({heroContent}) {
               pr: { md: 0 },
             }}
           >
-            <Typography component="h1" variant="h3" color="inherit" gutterBottom>
+            <Typography variant="h2" color="inherit" gutterBottom>
               {heroContent.title}
             </Typography>
-            <Typography variant="h5" color="inherit" paragraph>
+            {/*<Typography variant="h5" color="inherit" paragraph>
               {heroContent.content}
-            </Typography>
+            </Typography>*/}
+            {heroContent.content.map(paragraph => 
+            <Typography variant='body1'>{paragraph}</Typography>)}
             <Link variant="subtitle1" href="#">              
             </Link>
           </Box>
