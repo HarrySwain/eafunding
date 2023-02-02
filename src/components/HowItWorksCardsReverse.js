@@ -3,7 +3,13 @@ import { Card, Box, Typography, CardMedia, List, ListItem, ListItemIcon, ListIte
 export default function HowItWorksCardsReverse({DATA}) {
 
   return(
-    <Card elevation={0} sx={{ width: '100%', display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'space-between'}}>
+    <Card elevation={0} sx={{ width: '100%', 
+                              display: 'flex', 
+                              flexWrap: 'wrap', 
+                              alignItems: 'center', 
+                              justifyContent: 'space-between',
+                              py: 3,
+                            }}>
       <CardMedia
         component="img"
         sx={{

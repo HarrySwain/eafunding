@@ -6,6 +6,7 @@ import HowItWorksCards from "../components/HowItWorksCards";
 import HowItWorksCardsReverse from "../components/HowItWorksCardsReverse";
 import HowItWorksAccordion from "../components/HowItWorksAccordion";
 
+
 const CLIENTTYPEA = {
   "subheading": "Law Firms",
   "heading": "Business-to-Business Funding",
@@ -138,13 +139,14 @@ function HowItWorks() {
     <>
       <Navbar />
       <Container>
-        <Typography variant="h1" sx={{textAlign: 'center'}}>How It Works</Typography>
         <HowItWorksCards DATA={CLIENTTYPEA}/>
         <HowItWorksCardsReverse DATA={CLIENTTYPEB} />
         <Divider />
-        <Typography variant="h3">What does a consumer need to do to consider an EAF disbursement fee credit facility?</Typography>
-        <Typography variant="subtitle1">Read below for details on; the process involved in applying for an EAF loan, the benefits and the costs. <br /> We recommend that you consult with your Solicitor and seek independent financial advice.</Typography>
-        <HowItWorksAccordion data={ACCORDION}/>
+        <Container sx={{ paddingY: 3 }} maxWidth='md'>
+          <Typography variant="h3">What does a consumer need to do to consider an EAF disbursement fee credit facility?</Typography>
+          <Typography variant="subtitle1">Read below for details on; the process involved in applying for an EAF loan, the benefits and the costs. <br /> We recommend that you consult with your Solicitor and seek independent financial advice.</Typography>
+          <HowItWorksAccordion data={ACCORDION}/>
+        </Container>
       </Container>
     </>
     
