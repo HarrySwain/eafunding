@@ -24,7 +24,7 @@ export default function MediaCard({feature}) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Learn More</Button>
+        <Button variant='contained' size="small" href={feature.link}>Learn More</Button>
       </CardActions>
     </Card>
   );
