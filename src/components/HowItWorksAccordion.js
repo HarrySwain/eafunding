@@ -16,7 +16,7 @@ export default function HowItWorksAccordion({data}) {
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
-            <Typography>{questionAndAnswer.question}</Typography>
+            <Typography variant='h6'>{questionAndAnswer.question}</Typography>
           </AccordionSummary>
           <AccordionDetails>
             <List>
