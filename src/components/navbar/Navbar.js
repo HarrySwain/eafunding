@@ -66,8 +66,8 @@ function Navbar() {
             >
               {mainNavbarItems.map((page) => (
                 <MenuItem key={page.id} onClick={handleCloseNavMenu}>
-                  {/*<Typography textAlign="center">{page.label}</Typography>*/}
-                  <Link href={page.route}>{page.label}</Link>
+                  {/*<Link href={page.route}>{page.label}</Link>*/}
+                  <Link to={page.route}>{page.label}</Link>
                 </MenuItem>
               ))}
             </Menu>
@@ -75,7 +75,7 @@ function Navbar() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'flex-end' }}>
             {mainNavbarItems.map((page) => (
               <Button
-                key={page.route}
+                key={page.id}
                 onClick={handleCloseNavMenu}
                 href={page.route}
                 sx={{ my: 2, color: 'black', display: 'block' }}

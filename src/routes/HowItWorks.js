@@ -1,7 +1,6 @@
 import { Typography } from "@mui/material";
 import { Container } from "@mui/system";
 import Divider from '@mui/material/Divider';
-import Navbar from "../components/navbar/Navbar";
 import HowItWorksCards from "../components/HowItWorksCards";
 import HowItWorksCardsReverse from "../components/HowItWorksCardsReverse";
 import HowItWorksAccordion from "../components/HowItWorksAccordion";
@@ -137,7 +136,6 @@ const ACCORDION = [
 function HowItWorks() {
   return(
     <>
-      <Navbar />
       <Container>
         <HowItWorksCards DATA={CLIENTTYPEA}/>
         <HowItWorksCardsReverse DATA={CLIENTTYPEB} />

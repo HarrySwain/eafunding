@@ -1,5 +1,4 @@
 import './App.css';
-import Navbar from '../components/navbar/Navbar.js';
 import HeroSection from '../components/HeroSection.js';
 import FeatureGrid from '../components/FeatureGrid.js';
 import { createTheme } from '@mui/material/styles';
@@ -56,7 +55,6 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <div>
-        <Navbar />
         <HeroSection heroContent={heroContent} />
         <FeatureGrid features={features} />
       </div>

@@ -1,6 +1,5 @@
 import { CardContent, Paper, Typography } from "@mui/material";
 import { Container } from "@mui/system";
-import Navbar from "../components/navbar/Navbar";
 
 const DATA = {
   'content': [
@@ -18,7 +17,6 @@ const DATA = {
 function OurBusiness() {
   return(
     <div>
-      <Navbar />
       <Container sx={{padding: 5}}>
         <Paper>
           <CardContent>

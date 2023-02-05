@@ -14,35 +14,42 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+import ErrorPage from './error-page';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />,
+    path: '/',
+    element: <Layout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <App />,
+      },
+      {
+        path: "/our_business",
+        element: <OurBusiness />,
+      },
+      {
+        path: "/how_it_works",
+        element: <HowItWorks />,
+      },
+      {
+        path: "/faq",
+        element: <FAQ />
+      },
+      {
+        path: "/privacy",
+        element: <Privacy />,
+      },
+      {
+        path: "contact_us",
+        element: <ContactUs />,
+      }
+    ]
   },
-  {
-    path: "/our_business",
-    element: <OurBusiness />,
-  },
-  {
-    path: "/how_it_works",
-    element: <HowItWorks />
-  },
-  {
-    path: "/faq",
-    element: <FAQ />
-  },
-  {
-    path: "/privacy",
-    element: <Privacy />,
-  },
-  {
-    path: "/contact_us",
-    element: <ContactUs />
-  },
-
 ]);
 
 root.render(

@@ -1,9 +1,7 @@
-import Navbar from "../components/navbar/Navbar";
 import { Container } from "@mui/system";
 function Privacy() {
   return(
     <div>
-      <Navbar />
       <Container>
         <section class='root'>
         <section class='column'>

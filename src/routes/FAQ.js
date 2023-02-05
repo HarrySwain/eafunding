@@ -1,5 +1,4 @@
 import { Typography } from "@mui/material";
-import Navbar from "../components/navbar/Navbar";
 import { Container } from "@mui/material";
 import FaqAccordian from "../components/FaqAccordian";
 
@@ -39,7 +38,6 @@ const DATA = {
 function FAQ() {
   return(
     <div>
-      <Navbar />
       <Container sx={{padding: 5 }} maxWidth='md' >
         <Typography variant="h2" textAlign='center' sx={{ pb: 5 }} >{DATA.title}</Typography>
         <FaqAccordian data={DATA.rows} />

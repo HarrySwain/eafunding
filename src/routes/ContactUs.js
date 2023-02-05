@@ -1,4 +1,3 @@
-import Navbar from "../components/navbar/Navbar";
 import ContactUsCard from "../components/ContactUsCard";
 import AccountBalanceIcon from '@mui/icons-material/AccountBalance';
 import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
@@ -41,7 +40,6 @@ const DATA = {
 function ContactUs() {
   return(
     <div>
-      <Navbar />
       <Container sx={{
         display: 'flex',
         justifyContent: 'center',
