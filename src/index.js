@@ -9,6 +9,7 @@ import FAQ from './routes/FAQ';
 import OurBusiness from './routes/OurBusiness';
 import reportWebVitals from './reportWebVitals';
 import Privacy from './routes/Privacy';
+import { Layout } from './layouts/layout';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';

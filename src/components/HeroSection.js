@@ -43,7 +43,7 @@ function HeroSection({heroContent}) {
               {heroContent.content}
             </Typography>*/}
             {heroContent.content.map(paragraph => 
-            <Typography variant='body1'>{paragraph}</Typography>)}
+              <Typography variant='body1'>{paragraph}</Typography>)}
             <Link variant="subtitle1" href="#">              
             </Link>
           </Box>
