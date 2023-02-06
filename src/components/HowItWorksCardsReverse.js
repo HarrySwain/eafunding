@@ -1,11 +1,18 @@
-import { Card, Box, Typography, CardMedia, List, ListItem, ListItemIcon, ListItemText } from "@mui/material"
+import { Card, Box, Typography, CardMedia, List, ListItem, ListItemIcon, ListItemText, useMediaQuery } from "@mui/material";
 
 export default function HowItWorksCardsReverse({DATA}) {
+  let orderVariable = 0;
 
+  if (useMediaQuery('(max-width:1147px)')) {
+    orderVariable = 1;
+  } else {
+    orderVariable = 0;
+  }
+  
   return(
     <Card elevation={0} sx={{ width: '100%', 
                               display: 'flex', 
-                              flexWrap: 'wrap', 
+                              flexWrap: 'wrap',
                               alignItems: 'center', 
                               justifyContent: 'space-between',
                               py: 3,
@@ -14,7 +21,8 @@ export default function HowItWorksCardsReverse({DATA}) {
         component="img"
         sx={{
           maxWidth: 400,
-          minWidth: 300
+          minWidth: 300,
+          order: orderVariable,
         }}
         image={DATA.image}
         alt=""
