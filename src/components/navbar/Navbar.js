@@ -11,6 +11,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { mainNavbarItems } from './consts/navbarItems.js';
 import Logo from '../../img/logo.png';
 import { Link } from 'react-router-dom';
+import { Link as RouterLink } from 'react-router-dom';
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -77,7 +78,8 @@ function Navbar() {
               <Button
                 key={page.id}
                 onClick={handleCloseNavMenu}
-                href={page.route}
+                component={RouterLink}
+                to={page.route}
                 sx={{ my: 2, color: 'black', display: 'block' }}
               >
                 {page.label}
