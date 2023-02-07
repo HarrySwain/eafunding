@@ -1,19 +1,6 @@
 import './App.css';
 import HeroSection from '../components/HeroSection.js';
 import FeatureGrid from '../components/FeatureGrid.js';
-import { createTheme } from '@mui/material/styles';
-import { ThemeProvider } from '@mui/material/styles';
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#A6CE39',
-    },
-    secondary: {
-      main: '#D8CEF3'
-    },
-  },
-});
 
 const heroContent = {
   image: '../img/herobackground.jpg',
@@ -50,15 +37,12 @@ const features = [
   },
 ]
 
-
 function App() {
   return (
-    <ThemeProvider theme={theme}>
       <div>
         <HeroSection heroContent={heroContent} />
         <FeatureGrid features={features} />
       </div>
-    </ThemeProvider>
   );
 }
 

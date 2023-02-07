@@ -39,7 +39,6 @@ export default function HowItWorksCardsReverse({DATA}) {
               <ListItemText primary={item.step} />
             </ListItem>
           )}
-          
         </List>
       </Box>
     </Card>

@@ -15,8 +15,21 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import ErrorPage from './error-page';
+import { createTheme } from '@mui/material/styles';
+import { ThemeProvider } from '@mui/material/styles';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#A6CE39',
+    },
+    secondary: {
+      main: '#D8CEF3'
+    },
+  },
+});
 
 const router = createBrowserRouter([
   {
@@ -54,7 +67,9 @@ const router = createBrowserRouter([
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider theme={theme}>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
