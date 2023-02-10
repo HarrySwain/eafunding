@@ -27,11 +27,11 @@ const DATA = {
       icon: PhoneIcon,
     },
     {
-      contactType: 'info@eafunding.com.au',
+      contactType: 'alistair.swain@eafunding.com.au',
       icon: MailIcon,
     },
     {
-      contactType: 'https://www.eafunding.com',
+      contactType: 'https://www.eafunding.com.au',
       icon: WebIcon,
     },
   ]

@@ -1,6 +1,7 @@
-import { List, ListItem, ListItemIcon, ListItemText, Typography } from "@mui/material";
+import { List, ListItem, ListItemIcon, ListItemText, Paper, Typography } from "@mui/material";
 import { Container, Box } from "@mui/system";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import backgroundImage from '../img/blob-scene-haikei.svg';
 
 const DATA = {
   'content': [
@@ -49,7 +50,14 @@ const DATATWO ={
 export default function OurBusiness() {
   
   return(
-    <div>
+    <Paper sx={{
+      position: 'relative',
+      mb: 4,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: 'centre',
+      backgroundImage: `url(${backgroundImage})`,
+    }}>
       <Container sx={{paddingY: 10}}>
         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
           <Typography variant="h3" gutterBottom>{DATATWO.subheading}</Typography>
@@ -67,7 +75,7 @@ export default function OurBusiness() {
           </Box>
         </Box>
       </Container>
-    </div>
+    </Paper>
   )
 }
 
